@@ -1,7 +1,7 @@
 // MAIN CONTROLLER
 function mainController($scope) {
   $scope.users = [];
-  $scope.addUser = function () {
+  $scope.addUser = function() {
 
     var firstName = $scope.userFirstName.trim();
     $scope.userFirstName = '';
@@ -15,7 +15,7 @@ function mainController($scope) {
         firstname: firstName,
         lastname: lastName,
         email: mail
-      })
+      });
     }
-  }
-};
+  };
+}
